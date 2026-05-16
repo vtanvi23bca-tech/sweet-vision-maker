@@ -181,7 +181,7 @@ function Index() {
           <img src={tropicalCorner} alt="" className="absolute -bottom-6 -right-6 w-40 md:w-64 opacity-90 animate-gentle-float scale-x-[-1]" style={{ animationDelay: "1s" }} loading="lazy" />
 
           <p className="font-serif italic tracking-widest text-sm" style={{ color: "var(--magenta)" }}>
-            ॥ Shree Ganeshay Namah ॥ ॥ Shree Mahaviray Namah ॥
+            ॥ Shree Ganeshay Namah ॥<br />॥ Shree Mahaviray Namah ॥
           </p>
 
           {/* MD Monogram */}
@@ -235,7 +235,7 @@ function Index() {
             <ScratchReveal onRevealed={() => setRevealed(true)}>
               <div className="py-6 px-4 w-full">
                 <p className="font-script text-4xl sm:text-5xl md:text-6xl whitespace-nowrap" style={{ color: "var(--maroon)" }}>
-                  19<sup className="text-xl md:text-2xl">th</sup> · 20<sup className="text-xl md:text-2xl">th</sup> June
+                  20<sup className="text-xl md:text-2xl">th</sup> June
                 </p>
                 <p className="mt-3 font-display text-xs md:text-sm tracking-[0.4em]" style={{ color: "var(--maroon)" }}>2026 · MUMBAI</p>
                 <div className="ornament-divider my-3 max-w-[160px] mx-auto"><span className="text-gold-shimmer">✦</span></div>
@@ -412,8 +412,10 @@ function Index() {
                     <div className="ornament-divider my-3"><span style={{ color: "var(--gold)" }}>✦</span></div>
                     <ScrollReveal variant="up" delay={250}>
                       <p className="text-sm">
-                        <span className="font-serif text-base inline-block" style={{ color: "var(--maroon)" }}>Dr. Drishti · Dr. Yash</span><br />
-                        <span className="font-serif text-base" style={{ color: "var(--maroon)" }}>Kruti · Kunur · Malay · Jinal · Hardik</span>
+                        <span className="font-serif text-base inline-block" style={{ color: "var(--maroon)" }}>Dr. Drishti</span><br />
+                        <span className="font-serif text-base inline-block" style={{ color: "var(--maroon)" }}>Medhaben-Siddharthbhai Pathak</span><br />
+                        <span className="font-serif text-base inline-block" style={{ color: "var(--maroon)" }}>Pritiben-Sanjaybhai Joshi</span><br />
+                        <span className="font-serif text-base inline-block" style={{ color: "var(--maroon)" }}>Atmarpit Smrutiji</span>
                       </p>
                     </ScrollReveal>
                   </div>
@@ -429,14 +431,11 @@ function Index() {
           <ScrollReveal>
             <div className="text-center max-w-3xl mx-auto">
               <p className="font-display text-[10px] md:text-xs tracking-[0.5em] uppercase mb-4" style={{ color: "var(--magenta)" }}>
-                Two Days · Three Dreams
+                One Dream · Two Days · Three Royal Functions
               </p>
               <h2 className="font-display text-5xl md:text-7xl text-gold-shimmer leading-tight">
                 The Celebrations
               </h2>
-              <p className="font-script text-4xl md:text-5xl mt-3" style={{ color: "var(--maroon)" }}>
-                three royal functions
-              </p>
               <div className="ornament-divider mt-8">
                 <span className="text-gold-shimmer text-xl">✦</span>
               </div>
@@ -450,7 +449,7 @@ function Index() {
         
         {/* ─── CURTAIN 1: HALDI & MEHENDI ─── */}
         <div className="max-w-3xl mx-auto px-4">
-          <CurtainHeader kicker="Day One · The Morning Of" title="Haldi & Mehendi" script="soft hues and happy beginnings" />
+          <CurtainHeader kicker="Day One" title="Haldi & Mehendi" script="soft hues and happy beginnings" />
         </div>
         <div className="max-w-3xl mx-auto px-4">
           <Curtain label="Tap to Unveil" minHeight="min(820px, 150vw)">
@@ -551,7 +550,7 @@ function Index() {
 
         {/* ─── CURTAIN 2: SANGEET ─── */}
         <div className="max-w-3xl mx-auto px-4">
-          <CurtainHeader kicker="Day One · The Night Of" title="Sangeet & Ring Ceremony" script="a night of music, dance & love" />
+          <CurtainHeader kicker="Day One" title="Sangeet & Ring Ceremony" script="a night of music, dance & love" />
         </div>
         <div className="max-w-3xl mx-auto px-4">
           <Curtain label="Tap to Unveil" minHeight="min(820px, 150vw)">
@@ -740,10 +739,6 @@ function Index() {
         <div className="absolute inset-0 pointer-events-none opacity-[0.06] md:opacity-10" style={{ backgroundImage: `url(${mandalaBg})`, backgroundSize: "600px", mixBlendMode: "soft-light", filter: "invert(1) brightness(1.6) contrast(0.6)" }} />
 
         <div className="relative z-10 max-w-3xl mx-auto flex flex-col items-center">
-          <ScrollReveal variant="fade">
-            <h2 className="font-display text-5xl md:text-7xl text-gold-shimmer tracking-widest mb-6">M & D</h2>
-          </ScrollReveal>
-
           <ScrollReveal variant="fade" delay={150}>
             <h3 className="font-script text-4xl md:text-5xl text-gold-shimmer mb-8">Bless Us with Your Presence</h3>
           </ScrollReveal>
@@ -755,19 +750,19 @@ function Index() {
           </ScrollReveal>
 
           <ScrollReveal variant="fade" delay={450}>
-            <button onClick={() => { setLanterns(true); setTimeout(() => setLanterns(false), 8000); }} className="mb-10 px-8 py-3 rounded-full font-display text-[10px] md:text-xs tracking-[0.4em] uppercase hover:scale-105 transition-all animate-pulse-glow shadow-lg" style={{ background: "linear-gradient(135deg, oklch(0.42 0.16 22 / 0.85), oklch(0.30 0.13 22 / 0.95))", color: "var(--gold)", border: "1px solid oklch(0.75 0.16 80 / 0.5)", backdropFilter: "blur(8px)" }}>
-              Light the Celebration — Click the button ✦
+            <button onClick={() => { setLanterns(true); setTimeout(() => setLanterns(false), 8000); }} className="mb-10 px-8 py-3 rounded-full font-display text-[10px] md:text-xs tracking-[0.4em] uppercase hover:scale-105 transition-all animate-pulse-glow shadow-lg text-center leading-relaxed" style={{ background: "linear-gradient(135deg, oklch(0.42 0.16 22 / 0.85), oklch(0.30 0.13 22 / 0.95))", color: "var(--gold)", border: "1px solid oklch(0.75 0.16 80 / 0.5)", backdropFilter: "blur(8px)" }}>
+              Light the Celebration<br />Click the button ✦
             </button>
           </ScrollReveal>
 
           <ScrollReveal variant="fade" delay={600}>
             <p className="font-script text-4xl md:text-5xl text-gold-shimmer mb-1">With love,</p>
-            <p className="font-script text-5xl md:text-7xl text-gold-shimmer mb-10">Mansi & Darshan</p>
+            <p className="font-script text-5xl md:text-7xl text-gold-shimmer mb-10">Darshan & Mansi</p>
           </ScrollReveal>
 
           <ScrollReveal variant="fade" delay={750}>
             <p className="font-display tracking-[0.5em] text-[10px] md:text-xs uppercase" style={{ color: "oklch(0.85 0.12 80)" }}>
-              — 19 · 20 JUNE 2026 · MUMBAI —
+              — Blessings —
             </p>
           </ScrollReveal>
         </div>

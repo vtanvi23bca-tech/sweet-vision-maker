@@ -58,12 +58,6 @@ export function EnvelopeOpening({ onOpen }: Props) {
       {!breaking && (
         <div className="absolute bottom-[12%] md:bottom-[14%] left-0 right-0 text-center px-4 z-10">
           <p
-            className="font-display text-[11px] md:text-sm tracking-[0.5em] uppercase"
-            style={{ color: "oklch(0.45 0.06 50)" }}
-          >
-            Tap to Open
-          </p>
-          <p
             className="mt-3 font-script text-2xl md:text-3xl"
             style={{ color: "oklch(0.4 0.08 40)" }}
           >
